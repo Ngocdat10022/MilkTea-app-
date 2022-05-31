@@ -1,0 +1,36 @@
+.btn--main {
+    background-color: $main-color;
+    text-transform: uppercase;
+    color: $white-color;
+}
+.btn--main:hover {
+    background: transparent;
+    border: 1px solid $main-color;
+    padding: 7px 15px;
+    color: $main-color;
+}
+.btn--outline {
+    color: $white-color;
+    background: transparent;
+    border: 2px solid $white-color;
+    font-weight: 700;
+    text-decoration: double;
+    text-transform: uppercase;
+}
+.btn--outline:hover {
+    background-color: $main-color;
+    border: none;
+    padding: 10px 18px;
+}
+.btn--login {
+    background-color: $main-color;
+    border-radius: 25px;
+}
+.btn--small {
+    padding: 6px 15px;
+    font-size: 14px;
+}
+.btn--large {
+    padding: 8px 16px;
+    font-size: 16px;
+}

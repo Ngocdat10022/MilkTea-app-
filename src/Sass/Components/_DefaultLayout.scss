@@ -1,0 +1,22 @@
+.wrapper-dflo {
+    width: 100%;
+}
+.container {
+    @include respond-to(extra-small-mobile) {
+        max-width: $extra-mobile-width;
+    }
+    @include respond-to(small-mobile) {
+        max-width: $mobile-width;
+    }
+    @include respond-to(tablet) {
+        max-width: $tablet-width;
+    }
+    @include respond-to(large-tablet) {
+        max-width: $large-tablet;
+    }
+    @include respond-to(desktop) {
+        max-width: $public-width;
+    }
+    max-width: $public-width;
+    margin: auto;
+}

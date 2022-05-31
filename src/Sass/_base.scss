@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// body::-webkit-scrollbar{
+//   width:0px;
+// }
+html {
+    font-size: 13px;
+}
+
+body {
+    // font-family: 'Dongle', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    // font-family: 'Poppins', sans-serif;
+    // font-family: 'Russo One', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@each $col in $numbers {
+    .grid-col-#{$col} {
+        @include respond-to(extra-small-mobile) {
+            grid-template-columns: repeat($col, 1fr);
+        }
+    }
+}
+
+@each $col in $numbers {
+    .grid-sm-col-#{$col} {
+        @include respond-to(small-mobile) {
+            grid-template-columns: repeat($col, 1fr);
+        }
+    }
+}
+@each $col in $numbers {
+    .grid-md-col-#{$col} {
+        @include respond-to(tablet) {
+            grid-template-columns: repeat($col, 1fr);
+        }
+    }
+}
+@each $col in $numbers {
+    .grid-lg-col-#{$col} {
+        @include respond-to(large-tablet) {
+            grid-template-columns: repeat($col, 1fr);
+        }
+    }
+}
+@each $col in $numbers {
+    .grid-xl-col-#{$col} {
+        @include respond-to(desktop) {
+            grid-template-columns: repeat($col, 1fr);
+        }
+    }
+}
+
+.grid {
+    display: grid;
+}

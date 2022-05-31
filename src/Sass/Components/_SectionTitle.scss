@@ -1,0 +1,31 @@
+.positions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+        color: #d3b673;
+        font-size: 22px;
+        margin-bottom: 5px;
+        font-family: Muli, sans-serif;
+        font-weight: bold;
+    }
+    &-headding {
+        font-size: 36px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #000000;
+        margin-bottom: 10px;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+        margin-bottom: 0 !important;
+        padding: 0 50px;
+    }
+    &-icon-bottom {
+        background-image: url('https://tocotocotea.com/wp-content/themes/tocotocotea/assets/images/home_line.webp');
+        width: 315px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
